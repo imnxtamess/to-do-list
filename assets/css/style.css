@@ -5,12 +5,16 @@
 }
 
 .addTaskBtn {
-  background-color: black;
+  vertical-align: middle;
+  background-color: darkseagreen;
   color: white;
   padding: 0rem 0.6rem 0.3rem 0.6rem;
   font-size: 1.5rem;
   border-radius: 30%;
   border: solid 1px darkolivegreen;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 h1 {
   color: darkseagreen;
@@ -18,6 +22,7 @@ h1 {
 input {
   width: 80%;
   padding: 0.3rem;
+  vertical-align: middle;
   &:focus {
     outline: none;
     border: darkolivegreen solid 3px;
@@ -37,18 +42,15 @@ form {
 }
 
 .checkbox {
-  background-color: white;
   padding: 0.2rem 0.5rem;
   display: inline-block;
   border-radius: 50%;
   background-color: darkseagreen;
-  .checkmark {
-    color: darkseagreen;
-    &:hover {
-      color: white;
-      transition: 150ms;
-      cursor: pointer;
-    }
+  color: darkseagreen;
+  &:hover {
+    color: olivedrab;
+    background-color: olivedrab;
+    cursor: pointer;
   }
 }
 
@@ -62,5 +64,11 @@ form {
   font-size: 2rem;
   i {
     vertical-align: top;
+  }
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: darkred;
+    transition: 50ms;
   }
 }

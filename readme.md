@@ -18,9 +18,9 @@ Requisiti:
    - Utilizza il CSS per evidenziare gli elementi completati della lista.
 
 3. JavaScript:
-   - Implementa la logica per aggiungere nuovi elementi alla lista quando l'utente clicca sul pulsante.
+   - Implementa la logica per aggiungere nuovi elementi alla lista quando l'utente clicca sul pulsante. ☑️
    - Implementa la logica per rimuovere gli elementi dalla lista quando l'utente clicca su un pulsante di rimozione accanto a ciascun elemento.
-   - Implementa la logica per segnare gli elementi come completati quando l'utente clicca su di essi.
+   - Implementa la logica per segnare gli elementi come completati quando l'utente clicca su di essi.☑️
 
 Obiettivi di apprendimento:
 
