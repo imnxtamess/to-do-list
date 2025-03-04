@@ -44,6 +44,11 @@ form {
   background-color: darkseagreen;
   .checkmark {
     color: darkseagreen;
+    &:hover {
+      color: white;
+      transition: 150ms;
+      cursor: pointer;
+    }
   }
 }
 

@@ -6,13 +6,37 @@ const formEl = document.querySelector("form")
 const submitEl = document.querySelector(".addTaskBtn")
 const listEl = document.getElementById("list")
 const removeBtnEl = document.querySelector(".removeTaskBtn")
-const checkboxEl = document.querySelector(".checkbox")
+const checkBoxEl = document.querySelector(".checkbox")
+const checkMarkEl = document.querySelector(".checkmark")
 
 // append a list item to the listEl once the submitEl gets clicked
 
 submitEl.addEventListener("click", (e) => {
    e.preventDefault() // prevents the form default
 
+   // call the function to add the user input on the page
+   renderLi()
+
+   formEl.reset()
+
+})
+
+// change the checkmark color to white once the checkbox is clicked and viceversa
+
+
+checkBoxEl.addEventListener("click", function () {
+   console.log("im clicking");
+
+   if (!checkMarkEl.classList.contains("text-white")) {
+      checkMarkEl.classList.add("text-white");
+   } else {
+      checkMarkEl.classList.remove("text-white");
+   }
+})
+
+// FUNCTIONS
+
+function renderLi() {
    // save the user input into a variable
    const toDoThing = document.querySelector("input").value
 
@@ -32,5 +56,5 @@ submitEl.addEventListener("click", (e) => {
    //👉🏻 insert the markup on the dom inside the listEl
 
    listEl.innerHTML += markup
+}
 
-})
