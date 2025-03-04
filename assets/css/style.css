@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.addTaskBtn {
+  background-color: black;
+  color: white;
+  padding: 0rem 0.6rem 0.3rem 0.6rem;
+  font-size: 1.5rem;
+  border-radius: 30%;
+  border: solid 1px darkolivegreen;
+}
+h1 {
+  color: darkseagreen;
+}
+input {
+  width: 80%;
+  padding: 0.3rem;
+  &:focus {
+    outline: none;
+    border: darkolivegreen solid 3px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  align-items: flex-start;
+}
+
+form {
+  text-wrap: nowrap;
+}
+
+.checkbox {
+  background-color: white;
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: darkseagreen;
+  .checkmark {
+    color: darkseagreen;
+  }
+}
+
+.task {
+  margin-top: 2px;
+}
+
+.removeTaskBtn {
+  color: olivedrab;
+  margin-left: auto;
+  font-size: 2rem;
+  i {
+    vertical-align: top;
+  }
+}
